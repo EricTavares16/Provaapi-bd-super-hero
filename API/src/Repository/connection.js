@@ -1,3 +1,4 @@
+import mysql from 'mysql12/promise'
 
 const con = await mysql.createConnection ({
 
@@ -7,5 +8,7 @@ const con = await mysql.createConnection ({
     database: process.env.MYSQL_DB
 
 })
+
+console.log ('BD conectado');
 
 export { con }
